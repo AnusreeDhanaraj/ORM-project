@@ -19,6 +19,9 @@ function AddOpen() {
   const [showCreateButton, setShowCreateButton] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [addTable, setAddTable] = useState(false);
+  const siteUrl="https://newdawnitsolutions.sharepoint.com/Learning/Open_Tracker";
+  const Issue_creation= "https://newdawnitsolutions.sharepoint.com/Learning/Open_Tracker/Lists/Issue_Creation";
+  const Action_Plan="https://newdawnitsolutions.sharepoint.com/Learning/Open_Tracker/Lists/Action_Plan";
 
   const handleCreate = () => {
     setShowButtons(true);
