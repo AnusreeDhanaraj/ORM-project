@@ -52,78 +52,79 @@ function Issue_create() {
                 </div>
               </div>
               <div className="mainT">
-                <table border={1} className="tableT">
-                  <thead>
-                    <tr>
-                      <th rowspan="3">Business Unit</th>
-                    </tr>
-                    <tr>
-                      <th colspan="2">OR Events </th>
-                      <th colspan="2">RCSA</th>
-                      <th colSpan={2}>RA</th>
-                      <th colSpan={2}>ORMC</th>
-                      <th colSpan={2}>VRR</th>
-                      <th colSpan={2}>PPAC</th>
-                      <th colSpan={3}>Total</th>
-                    </tr>
-                    <tr>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Overdue</th>
-                      <th>Not Overdue</th>
-                      <th>Total</th>
-                    </tr>
-                    <tr>
-                      <td rowspan="2">Branch Banking</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                      <td rowspan="2">0</td>
-                    </tr>
-                    <tr>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td rowspan="1">Total</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td rowspan="1.5">0</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
+  <table border={1} className="tableT">
+    <thead>
+      <tr>
+        <th rowspan="3">Business Unit</th>
+      </tr>
+      <tr>
+        <th colspan="2">OR Events</th>
+        <th colspan="2">RCSA</th>
+        <th colspan={2}>RA</th>
+        <th colspan={2}>ORMC</th>
+        <th colspan={2}>VRR</th>
+        <th colspan={2}>PPAC</th>
+        <th colspan={3}>Total</th>
+      </tr>
+      <tr>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Overdue</th>
+        <th>Not Overdue</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Branch Banking</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+        <td rowspan="2">0</td>
+      </tr>
+      <tr>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td rowspan="1">Total</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td rowspan="1.5">0</td>
+      </tr>
+    </thead>
+  </table>
+</div>
+
               <div className="bottom">
                 <div className="buttons1">
                   <button>Previous </button>

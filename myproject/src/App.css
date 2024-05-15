@@ -1,164 +1,126 @@
-
-
-.action_plan{
-
+.action_plan {
   display: flex;
   font-size: 30px;
-  
+
   width: 500px;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 25px;
-  
 }
-#hd{
+#hd {
   margin-left: 20px;
 }
-.vr_line{
+.vr_line {
   width: 5px;
   height: 6vh;
   background-color: black;
 }
-.header{
+.header {
   height: 8vh;
   background-color: rgb(17, 103, 233);
   color: white;
 }
-.footer{
+.footer {
   height: 6vh;
   background-color: rgb(17, 103, 233);
   position: fixed;
   bottom: 0;
   width: 100%;
-  
 }
-.main_Details_div{
+.main_Details_div {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 77.5%;
   margin: 0 auto;
   padding: 20px;
-  margin-top:15px;
+  margin-top: 15px;
 }
-.Details{
+.Details {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   margin: 0;
   padding: 0;
 }
-/* .Links{
+.mb-3 {
   display: flex;
-  width: 700px;
-  justify-content: space-between;
-} */
-.Act_op{
+  flex-wrap: wrap; /* Allow items to wrap to the next line if they exceed container width */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+.Act_op {
   display: flex;
   gap: 3rem;
   padding: 10px;
 }
-title{
+title {
   font-size: 500px;
+  display: flex;
+  justify-content: space-between;
 }
- .para{
+.para {
   height: 20vh;
- }
- .btnz{
+}
+.btn__z {
   display: flex;
   justify-content: end;
- gap: 1rem;
- }
+  gap: 1rem;
+  /* width: 500px; */
+}
 
-
-/* table ,th{
-  background-color: #5b5d60;
-  color: aqua;  */
-/* } */
-#inp{
+#inp {
   width: 770px;
   padding: 7px;
- 
 }
-.inp{
+.inp {
   display: flex;
   justify-content: end;
   margin-top: 30px;
-  gap: .5rem;
- 
+  gap: 0.5rem;
+
   height: 4.5vh;
 }
-#remark{
-width: 400px;
-
+#remark {
+  width: 400px;
 }
-#Approve_btn{
+#Approve_btn {
   background-color: blue;
   color: white;
   border: none;
   width: 100px;
 }
-#Reject_btn{
+#Reject_btn {
   background-color: black;
   border: none;
   color: white;
   width: 110px;
 }
 
-.interim{
+.interim {
   display: flex;
   gap: 1rem;
 }
-.Action{
+.Action {
   display: flex;
   gap: 1rem;
 }
-/* .spinner{
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; Set the height to the full viewport height */
 
-/* } */
-/* .spinner-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-} */ 
-
-.spinner {
-  /* Add any additional styling you need for the spinner */
-}
-
-
-.spinner {
-  /* Add any additional styling you need for the spinner */
-}
-#ft{
-margin-left:10px;
-margin-top: 15px;
-color: white;
-
+#ft {
+  margin-left: 10px;
+  margin-top: 15px;
+  color: white;
 }
 
 /* issue */
 
-.tableT{
-  padding: 30px;
-  width: 1500px;
-
+.tableT th,
+.tableT td {
+  border: 1px solid black;
+  width: 5%;
 }
 
-.head{
+
+.head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 1600px; */
- 
 }
 .tables {
   display: flex;
@@ -175,23 +137,23 @@ color: white;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.ll{
- margin-top: 17px;
+.ll {
+  margin-top: 17px;
 }
-.head1{
+.head1 {
   display: flex;
   justify-content: space-between;
 }
-.T{
+.T {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* width: 100%; */
-  /* justify-content: center; */
+  /* width: 95%; */
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 10px;
+  justify-content: center;
 }
-.My_actionable{
+.My_actionable {
   display: flex;
   font-size: 30px;
   width: 390px;
@@ -200,13 +162,13 @@ color: white;
   margin-top: 25px;
   height: 70px;
 }
-.vr_line{
+.vr_line {
   width: 5px;
   height: 6vh;
   background-color: black;
 }
 
-.Open_issue{
+.Open_issue {
   display: flex;
   font-size: 30px;
   width: 500px;
@@ -222,34 +184,35 @@ color: white;
   align-items: center;
 }
 .mainT {
-padding: 10px;
+  padding: 5px;
+
+
 }
 .le {
   display: flex;
   align-items: center;
 }
 
-.top{
-   display: flex;
-   width: 1500px;
-   justify-content: space-between;
+.top {
+  display: flex;
+  width: 1500px;
+  justify-content: space-between;
 }
-.ri{
+.ri {
   display: flex;
   align-items: center;
 }
 
-
-select{
-height: 35px;
-display: flex;
-justify-content: center;
+select {
+  height: 35px;
+  display: flex;
+  justify-content: center;
 }
-input{
+input {
   height: 35px;
 }
 
-.bottom{
+.bottom {
   display: flex;
   justify-content: end;
   align-items: end;
@@ -257,35 +220,32 @@ input{
 }
 button{
   border: none;
-  width: 100px;
 }
 
-.r{
+.r {
   display: flex;
   justify-content: space-around;
-  width: 320px;
+  width: 380px;
+  padding: 15px;
 }
-.report{
+.report {
   background-color: blue;
   color: white;
+  padding: 7px;
 }
-.export{
+.export {
   background-color: green;
   color: white;
 }
-.add{
+.add {
   background-color: rgb(37, 34, 34);
   color: white;
+  padding: 7px;
 }
-.one{
+.one {
   background-color: blue;
   color: white;
 }
-/* .footer {
-  text-align: center;
-  margin-top: 20px;
-} */
-/* Addopen */
 
 .full {
   max-width: 100%;
@@ -296,48 +256,34 @@ button{
   align-items: center;
 }
 
-  .hr1{
-    width: 5px;
-    background-color: black;
-    height: 6vh;
-    margin-top: 20px;
-    /* margin-right: 20px; */
+.hr1 {
+  width: 5px;
+  background-color: black;
+  height: 6vh;
+  margin-top: 20px;
+  /* margin-right: 20px; */
 }
 
-
 .whole {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* width: 90%; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  margin-bottom: 20px; /* Added margin-bottom for spacing */
+  margin-bottom: 20px;
   padding: 15px;
 }
 
-.fulll{
-  box-shadow: 0 0 20px rgba(5, 5, 5, 0.1); /* Increased spread radius */
-  padding: 50px;
-  margin-bottom: 100px;
-  /* height: 100%; */
+.fulll {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  padding: 50px;
+  margin-bottom: 70px;
 }
-
 
 .content {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  /* width: 90%; */
-  /* max-width: 600px; */
-  /* padding: 15px; */
 }
 
 .heading {
   display: flex;
-  /* width: 100%; */
-  width: 670px;
+  width: 770px;
   gap: 1rem;
-  /* background-color: aqua; */
   justify-content: start;
 }
 
@@ -346,16 +292,59 @@ button{
   gap: 0.5rem;
 }
 
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  margin-top: 20px;
+/* Table Styles */
+.table_c {
+  width: 90%;
+  margin-bottom: 50px;
 }
 
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
 .sub-button {
-  margin-top: 20px;
-  background-color: blue;
-  padding: 5px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+}
+.lb {
+  justify-content: end;
+  display: flex;
+  width: 90%;
+}
+
+.sub-button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Button Padding */
+.sub-button:not(:last-child) {
+  margin-right: 10px;
 }
 
 .form {
@@ -363,17 +352,15 @@ button{
 }
 
 .butt0n {
-display: flex;
-justify-content: end;
+  display: flex;
+  justify-content: end;
   padding: 23px;
   margin-bottom: 30px;
-  
 }
 
-#crt_btn{
+#crt_btn {
   height: 5vh;
   margin-bottom: 30px;
-
 }
 .Tab {
   width: 100%;
@@ -419,20 +406,6 @@ justify-content: end;
   height: 5vh;
 }
 
-.header {
-  height: 9vh;
-  background-color: rgb(17, 103, 233);
-  color: white;
-}
-
-.footer {
-  height: 6vh;
-  background-color: rgb(17, 103, 233);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 #ft {
   margin-left: 10px;
   margin-top: 15px;
@@ -448,11 +421,11 @@ justify-content: end;
   justify-content: start;
 }
 
-#hd {
+/* #hd {
   width: 300px;
   display: flex;
   justify-content: center;
-}
+} */
 
 #hd1 {
   width: 100%;
