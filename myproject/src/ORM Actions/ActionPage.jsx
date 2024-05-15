@@ -92,14 +92,14 @@ function ActionPage() {
         </div>
 
         <div className="Links">
-          <Tabs
+          <Tabs 
             defaultActiveKey="profile"
             id="uncontrolled-tab-example"
             className="mb-3"
           >
             <Tab eventKey="home" title="Issue Description">
               <div>
-                <h6>
+                <h6 id="dis">
                   Issue Description: <Badge bg="secondary"></Badge>
                 </h6>
                 <FloatingLabel controlId="floatingTextarea2" label="test">
@@ -114,7 +114,7 @@ function ActionPage() {
 
             <Tab eventKey="profile" title=" Action Description">
               <div>
-                <h6>
+                <h6 id="dis">
                   Action Description: <Badge bg="secondary"></Badge>
                 </h6>
                 <FloatingLabel controlId="floatingTextarea2" label="test2">
@@ -228,19 +228,19 @@ function ActionPage() {
 
           </div>
          
-          <div className="btnz"> 
-            <Button
+          <div className="btn__z"> 
+            <Button id="bz"
               variant="primary"
               onClick={() => setShowRequestClosureModal(true)}
             >
               Request for Closure
             </Button>
 
-            <Button variant="dark" onClick={() => setLgShow(true)}>
+            <Button variant="dark" id="bz" onClick={() => setLgShow(true)}>
               Extensiontion of target date
             </Button>
 
-            <Button
+            <Button id="bz"
               onClick={() => setShowAddInterimUpdateModal(true)}
               variant="danger"
             >
