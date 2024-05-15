@@ -74,6 +74,38 @@ function AddOpen() {
               <textarea name="" id="" cols="40" rows="6"></textarea>
             </label>
 
+          
+            <div className="content">
+                <label htmlFor="">User ID: <br /> <input type="text" className='form'/></label>
+                
+                <label htmlFor="">Component <br /> <input type="text" name="" id="" className='form'/></label>
+                
+                <label htmlFor="">Source Of Issue <br /> <input type="text" name="" id="" className='form'/></label>
+                
+                <label htmlFor="">Date Of Issue <br /> <input type="date" name="" id="" className='form'/></label>
+                
+                <label htmlFor="">Vendor Name <br />        <input type="text" name="" id="" className='form'/>
+</label>
+                <label htmlFor="">Risk Rating <br /> <input type="text" name="" id="" className='form'/></label>
+                
+                <label htmlFor="">Issue Description <br /> <textarea name="" id="" cols="40" rows="6"></textarea></label>
+                
+                <label htmlFor="">Remarks (if Any) <br /><textarea name="" id="" cols="40" rows="6"></textarea></label>
+                
+                <label htmlFor="">Team Leader Name <br /> <input type="text" name="" id="" className='form'/></label>
+               
+                <label htmlFor="">Issue Creator <br /> <input type="text" name="" id="" className='form' /></label>
+               
+                <label htmlFor="">Upload Files <br /> <input type='document' name="" id="" className='form'/></label>
+                
+                <p>Status</p>
+            </div>
+            </div> 
+            <div className="butt0n">
+      {showCreateButton && (
+        <Button variant="primary" onClick={handleCreate} id='crt_btn'>Create</Button>
+      )}
+
             <label htmlFor="">
               Remarks (if Any) <br />
               <textarea name="" id="" cols="40" rows="6"></textarea>
