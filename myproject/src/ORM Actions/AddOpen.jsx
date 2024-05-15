@@ -53,7 +53,7 @@ function AddOpen() {
         <div className="whole">
           
             <div className="content">
-                <label htmlFor="">User ID <br /> <input type="text" className='form'/></label>
+                <label htmlFor="">User ID: <br /> <input type="text" className='form'/></label>
                 
                 <label htmlFor="">Component <br /> <input type="text" name="" id="" className='form'/></label>
                 
