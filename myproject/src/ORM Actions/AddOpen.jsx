@@ -16,6 +16,7 @@ const Footer = () => {
 
 function AddOpen() {
   const [showButtons, setShowButtons] = useState(false);
+    
   const [showCreateButton, setShowCreateButton] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [addTable, setAddTable] = useState(false);
