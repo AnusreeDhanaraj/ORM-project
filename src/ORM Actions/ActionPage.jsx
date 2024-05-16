@@ -14,7 +14,6 @@ function ActionPage() {
   
   const [showPotion, setShowPotion] = useState(true);
   const [display, setDisplay] = useState(true);
-  const [showSpinner, setShowSpinner] = useState(true);
 
   const toggleDisplay = () => {
     setShowPotion(!showPotion);
@@ -24,13 +23,13 @@ function ActionPage() {
   //   setShowPotion(false);
   // };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSpinner(false);
-    }, 2000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowSpinner(false);
+  //   }, 2000);
 
-    return () => clearTimeout(timer);
-  }, []); 
+  //   return () => clearTimeout(timer);
+  // }, []); 
 
   const showAlert = () => {
     const message = 'Custom alert message here!';

@@ -6,14 +6,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Changed 'BrowserRouter as Routes' to 'BrowserRouter as Router'
 
 import AddOpen from './ORM Actions/AddOpen';
+import ActionPage from './ORM Actions/ActionPage';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Routes> {/* Changed 'Routes' to 'Switch' */}
-          <Route path="/" element={<Issue_create />} /> {/* Changed 'index' to 'path' */}
+        <Routes>
+          <Route path="/" element={<Issue_create />} /> 
           <Route path="/addopen" element={<AddOpen />} />
+          <Route path="/Action" element={<ActionPage/>} />
         </Routes>
       </Router>
     </div>
