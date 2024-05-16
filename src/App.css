@@ -2,7 +2,7 @@
   display: flex;
   font-size: 30px;
 
-  width: 500px;
+  width: 520px;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 25px;
@@ -17,6 +17,7 @@
 }
 .header {
   height: 8vh;
+  text-align: center;
   background-color: rgb(17, 103, 233);
   color: white;
 }
@@ -185,7 +186,7 @@ title {
 }
 .mainT {
   padding: 5px;
-
+text-align: center;
 
 }
 .le {
