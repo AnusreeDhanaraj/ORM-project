@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Issue_create from './ORM Actions/Issue_create';
 import Ormspinner from './ORM Actions/OrmSpinner';
+import { SSRProvider, useIsSSR, useSSRSafeId } from '@react-aria/ssr';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Changed 'BrowserRouter as Routes' to 'BrowserRouter as Router'
 

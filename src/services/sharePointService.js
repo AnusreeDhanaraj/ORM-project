@@ -1,4 +1,6 @@
 // src/services/SharePointService.js
+import { SSRProvider, useIsSSR, useSSRSafeId } from '@react-aria/ssr';
+
 
 const SP_PROXY_URL = 'http://localhost:8080';
 
