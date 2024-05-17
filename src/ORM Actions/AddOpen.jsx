@@ -41,7 +41,7 @@ function AddOpen() {
       <div className="fulll">
         <div className="whole">
           <div className="content">
-            <label htmlFor="">
+            {/* <label htmlFor="">
               User ID <br /> <input type="text" className="form" />
             </label>
 
@@ -72,7 +72,7 @@ function AddOpen() {
             <label htmlFor="">
               Issue Description <br />{" "}
               <textarea name="" id="" cols="40" rows="6"></textarea>
-            </label>
+            </label> */}
 
           
             <div className="content">
@@ -101,33 +101,7 @@ function AddOpen() {
                 <p>Status</p>
             </div>
             </div> 
-            <div className="butt0n">
-      {showCreateButton && (
-        <Button variant="primary" onClick={handleCreate} id='crt_btn'>Create</Button>
-      )}
-
-            <label htmlFor="">
-              Remarks (if Any) <br />
-              <textarea name="" id="" cols="40" rows="6"></textarea>
-            </label>
-
-            <label htmlFor="">
-              Team Leader Name <br />{" "}
-              <input type="text" name="" id="" className="form" />
-            </label>
-
-            <label htmlFor="">
-              Issue Creator <br />{" "}
-              <input type="text" name="" id="" className="form" />
-            </label>
-
-            <label htmlFor="">
-              Upload Files <br />{" "}
-              <input type="document" name="" id="" className="form" />
-            </label>
-
-            <p>Status</p>
-          </div>
+            
         </div>
         <div className="butt0n">
           {showCreateButton && (

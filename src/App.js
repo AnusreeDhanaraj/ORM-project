@@ -4,7 +4,7 @@ import Issue_create from './ORM Actions/Issue_create';
 import Ormspinner from './ORM Actions/OrmSpinner';
 import { SSRProvider, useIsSSR, useSSRSafeId } from '@react-aria/ssr';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Changed 'BrowserRouter as Routes' to 'BrowserRouter as Router'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 
 import AddOpen from './ORM Actions/AddOpen';
 import ActionPage from './ORM Actions/ActionPage';
@@ -15,11 +15,11 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Issue_create />} /> 
-          <Route path="/addopen" element={<AddOpen />} />
+          <Route path="/addopen" element={<AddOpen />} /> 
           <Route path="/Action" element={<ActionPage/>} />
         </Routes>
       </Router>
-    </div>
+    </div>     
   );
 }
 
