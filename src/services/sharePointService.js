@@ -41,8 +41,9 @@ function getHeaders(digestValue) {
  * @param {string} digestValue - The SharePoint request digest value.
  */
 async function getSharePointListItems(digestValue) {
-  const listUrl = `${SP_PROXY_URL}/sites/Learning/Open_Tracker/_api/web/lists/getbytitle('Add_Actionable')/items`;
+  //const listUrl = `${SP_PROXY_URL}/sites/Learning/Open_Tracker/_api/web/lists/getbytitle('Add_Actionable')/items`;
 
+  return new Promise(()); 
   const response = await fetch(listUrl, {
     method: 'GET',
     headers: getHeaders(digestValue),
