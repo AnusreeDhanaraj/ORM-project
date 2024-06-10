@@ -43,11 +43,66 @@ function getHeaders(digestValue) {
 async function getSharePointListItems(digestValue) {
   const listUrl = `${SP_PROXY_URL}/sites/Learning/Open_Tracker/_api/web/lists/getbytitle('Add_Actionable')/items`;
 
- api-sett
+//  api-sett
   // return new Promise(()); 
-=======
-  return new Promise(([])); 
- main
+  return new Promise (  [
+    {
+      userId: "user1",
+      component: "Component A",
+      sourceOfIssue: "Source A",
+      dateOfIssue: "2023-05-01",
+      vendorName: "Vendor A",
+      riskRating: "High",
+      issueDescription: "Description of the issue for User 1",
+      remarks: "Remarks for User 1",
+      teamLeaderName: "Leader A",
+      issueCreator: "Creator A",
+      uploadFiles: "file1.pdf"
+    },
+    {
+      userId: "user2",
+      component: "Component B",
+      sourceOfIssue: "Source B",
+      dateOfIssue: "2023-05-02",
+      vendorName: "Vendor B",
+      riskRating: "Medium",
+      issueDescription: "Description of the issue for User 2",
+      remarks: "Remarks for User 2",
+      teamLeaderName: "Leader B",
+      issueCreator: "Creator B",
+      uploadFiles: "file2.pdf"
+    },
+
+    {
+      userId: "user3",
+      component: "Component c",
+      sourceOfIssue: "Source c",
+      dateOfIssue: "2023-05-02",
+      vendorName: "Vendor c",
+      riskRating: "Medium",
+      issueDescription: "Description of the issue for User 3",
+      remarks: "Remarks for User 3",
+      teamLeaderName: "Leader c",
+      issueCreator: "Creator c",
+      uploadFiles: "file2.pdf"
+    },
+    
+    {
+      userId: "user4",
+      component: "Component c",
+      sourceOfIssue: "Source c",
+      dateOfIssue: "2023-05-02",
+      vendorName: "Vendor c",
+      riskRating: "Medium",
+      issueDescription: "Description of the issue for User 3",
+      remarks: "Remarks for User 3",
+      teamLeaderName: "Leader c",
+      issueCreator: "Creator c",
+      uploadFiles: "file2.pdf"
+    },
+  ]
+      ) ; 
+//  main
   const response = await fetch(listUrl, {
     method: 'GET',
     headers: getHeaders(digestValue),
