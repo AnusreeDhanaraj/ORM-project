@@ -19,6 +19,7 @@ function ActionPage() {
     setShowPotion(!showPotion);
     setDisplay(!display); 
   };
+  
   // const togglePotion = () => {
   //   setShowPotion(false);
   // };
