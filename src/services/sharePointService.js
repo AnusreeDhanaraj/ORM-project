@@ -58,6 +58,7 @@ async function getSharePointListItems(digestValue) {
       remarks: "Remarks for User 1",
       teamLeaderName: "Leader A",
       issueCreator: "Creator A",
+      uploadFiles: "file1.pdf"
     },
     {
       userId: "user2",
