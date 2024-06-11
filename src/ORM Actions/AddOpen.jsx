@@ -60,6 +60,27 @@ function AddOpen() {
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
 
+  const [formData, setFormData] = useState({
+    userId: '',
+    component: '',
+    sourceOfIssue: '',
+    dateOfIssue: '',
+    vendorName: '',
+    riskRating: '',
+    issueDescription: '',
+    remarks: '',
+    teamLeaderName: '',
+    issueCreator: '',
+    uploadFiles: ''
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
   return (
     <div className="full">
       <div className="header1">
@@ -76,6 +97,7 @@ function AddOpen() {
       <div className="fulll">
         <div className="whole">
           <div className="content">
+
             <label>
               User ID: <br />
               <input
@@ -202,6 +224,139 @@ function AddOpen() {
               />
             </label>
           </div>
+
+           
+            <div className="content">
+            <label>
+        User ID: <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="userId" 
+          value={formData.userId} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Component <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="component" 
+          value={formData.component} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Source Of Issue <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="sourceOfIssue" 
+          value={formData.sourceOfIssue} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Date Of Issue <br />
+        <input 
+          type="date" 
+          className='form' 
+          name="dateOfIssue" 
+          value={formData.dateOfIssue} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Vendor Name <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="vendorName" 
+          value={formData.vendorName} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Risk Rating <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="riskRating" 
+          value={formData.riskRating} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Issue Description <br />
+        <textarea 
+          name="issueDescription" 
+          cols="40" 
+          rows="6" 
+          value={formData.issueDescription} 
+          onChange={handleChange} 
+        ></textarea>
+      </label>
+
+      <label>
+        Remarks (if Any) <br />
+        <textarea 
+          name="remarks" 
+          cols="40" 
+          rows="6" 
+          value={formData.remarks} 
+          onChange={handleChange} 
+        ></textarea>
+      </label>
+
+      <label>
+        Team Leader Name <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="teamLeaderName" 
+          value={formData.teamLeaderName} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Issue Creator <br />
+        <input 
+          type="text" 
+          className='form' 
+          name="issueCreator" 
+          value={formData.issueCreator} 
+          onChange={handleChange} 
+        />
+      </label>
+
+      <label>
+        Upload Files <br />
+        <input 
+          type="file" 
+          className='form' 
+          name="uploadFiles" 
+          onChange={(e) => {
+            const file = e.target.files[0];
+            setFormData({
+              ...formData,
+              uploadFiles: file
+            });
+          }} 
+        />
+      </label>
+                <p>Status</p>
+            </div>
+            </div> 
+            
+
         </div>
 
         <div className="butt0n">

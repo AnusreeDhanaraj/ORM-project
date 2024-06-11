@@ -12,13 +12,14 @@ import ActionPage from './ORM Actions/ActionPage';
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<Issue_create />} /> 
           <Route path="/addopen" element={<AddOpen />} /> 
           <Route path="/Action" element={<ActionPage/>} />
         </Routes>
-      </Router>
+      </Router> */}
+      <AddOpen/>
     </div>     
   );
 }
