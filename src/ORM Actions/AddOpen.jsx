@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import { getDigestValue, getSharePointListItems } from './services/SharePointService';
+// import { getDigestValue, getSharePointListItems } from './services/SharePointService';
 
 const Footer = () => {
   return <div className="footer">Footer Content</div>;

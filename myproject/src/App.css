@@ -1,0 +1,469 @@
+
+
+.action_plan{
+
+  display: flex;
+  font-size: 30px;
+  
+  width: 500px;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 25px;
+  
+}
+#hd{
+  margin-left: 20px;
+}
+.vr_line{
+  width: 5px;
+  height: 6vh;
+  background-color: black;
+}
+.header{
+  height: 8vh;
+  background-color: rgb(17, 103, 233);
+  color: white;
+}
+.footer{
+  height: 6vh;
+  background-color: rgb(17, 103, 233);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+.main_Details_div{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 77.5%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top:15px;
+}
+.Details{
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+/* .Links{
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+} */
+.Act_op{
+  display: flex;
+  gap: 3rem;
+  padding: 10px;
+}
+title{
+  font-size: 500px;
+}
+ .para{
+  height: 20vh;
+ }
+ .btnz{
+  display: flex;
+  justify-content: end;
+ gap: 1rem;
+ }
+
+
+/* table ,th{
+  background-color: #5b5d60;
+  color: aqua;  */
+/* } */
+#inp{
+  width: 770px;
+  padding: 7px;
+ 
+}
+.inp{
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  gap: .5rem;
+ 
+  height: 4.5vh;
+}
+#remark{
+width: 400px;
+
+}
+#Approve_btn{
+  background-color: blue;
+  color: white;
+  border: none;
+  width: 100px;
+}
+#Reject_btn{
+  background-color: black;
+  border: none;
+  color: white;
+  width: 110px;
+}
+
+.interim{
+  display: flex;
+  gap: 1rem;
+}
+.Action{
+  display: flex;
+  gap: 1rem;
+}
+/* .spinner{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; Set the height to the full viewport height */
+
+/* } */
+/* .spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+} */ 
+
+.spinner {
+  /* Add any additional styling you need for the spinner */
+}
+
+
+.spinner {
+  /* Add any additional styling you need for the spinner */
+}
+#ft{
+margin-left:10px;
+margin-top: 15px;
+color: white;
+
+}
+
+/* issue */
+
+.tableT{
+  padding: 30px;
+  width: 1500px;
+
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 1600px; */
+ 
+}
+.tables {
+  display: flex;
+  flex-direction: column;
+}
+
+.table1,
+.table2 {
+  margin-top: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ll{
+ margin-top: 17px;
+}
+.head1{
+  display: flex;
+  justify-content: space-between;
+}
+.T{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* width: 100%; */
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.My_actionable{
+  display: flex;
+  font-size: 30px;
+  width: 390px;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 25px;
+  height: 70px;
+}
+.vr_line{
+  width: 5px;
+  height: 6vh;
+  background-color: black;
+}
+
+.Open_issue{
+  display: flex;
+  font-size: 30px;
+  width: 500px;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 25px;
+  height: 70px;
+}
+
+.le,
+.ri {
+  display: flex;
+  align-items: center;
+}
+.mainT {
+padding: 10px;
+}
+.le {
+  display: flex;
+  align-items: center;
+}
+
+.top{
+   display: flex;
+   width: 1500px;
+   justify-content: space-between;
+}
+.ri{
+  display: flex;
+  align-items: center;
+}
+
+
+select{
+height: 35px;
+display: flex;
+justify-content: center;
+}
+input{
+  height: 35px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border: none;
+}
+button{
+  border: none;
+  width: 100px;
+}
+
+.r{
+  display: flex;
+  justify-content: space-around;
+  width: 320px;
+}
+.report{
+  background-color: blue;
+  color: white;
+}
+.export{
+  background-color: green;
+  color: white;
+}
+.add{
+  background-color: rgb(37, 34, 34);
+  color: white;
+}
+.one{
+  background-color: blue;
+  color: white;
+}
+/* .footer {
+  text-align: center;
+  margin-top: 20px;
+} */
+/* Addopen */
+
+.full {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .hr1{
+    width: 5px;
+    background-color: black;
+    height: 6vh;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+}
+
+
+.whole {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 90%; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-bottom: 20px; /* Added margin-bottom for spacing */
+  padding: 15px;
+}
+
+.fulll{
+  box-shadow: 0 0 20px rgba(5, 5, 5, 0.1); /* Increased spread radius */
+  padding: 50px;
+  margin-bottom: 100px;
+  /* height: 100%; */
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  /* width: 90%; */
+  /* max-width: 600px; */
+  /* padding: 15px; */
+}
+
+.heading {
+  display: flex;
+  /* width: 100%; */
+  width: 670px;
+  gap: 1rem;
+  /* background-color: aqua; */
+  justify-content: start;
+}
+
+.bts {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.sub-button {
+  margin-top: 20px;
+  background-color: blue;
+  padding: 5px;
+}
+
+.form {
+  width: 100%;
+}
+
+.butt0n {
+display: flex;
+justify-content: end;
+  padding: 23px;
+  margin-bottom: 30px;
+  
+}
+
+#crt_btn{
+  height: 5vh;
+  margin-bottom: 30px;
+
+}
+.Tab {
+  width: 100%;
+  max-width: 100%;
+}
+
+.Bottom {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.l {
+  margin-right: 10px;
+}
+
+.bottom button {
+  width: 80px;
+}
+
+.bt Button {
+  height: 4.5vh;
+  align-items: center;
+}
+
+.bt {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#pri {
+  height: 5.5vh;
+  width: 150px;
+}
+
+#savebtn {
+  height: 5vh;
+}
+
+.header {
+  height: 9vh;
+  background-color: rgb(17, 103, 233);
+  color: white;
+}
+
+.footer {
+  height: 6vh;
+  background-color: rgb(17, 103, 233);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#ft {
+  margin-left: 10px;
+  margin-top: 15px;
+  color: white;
+}
+
+.header1 {
+  height: 6vh;
+  background-color: rgb(17, 103, 233);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+#hd {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#hd1 {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  /* Adjust styles for tablets and desktops */
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
