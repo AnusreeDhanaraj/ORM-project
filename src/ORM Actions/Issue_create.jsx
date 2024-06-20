@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Issue_create() {
   return (
-    <div>
+    <div className='Whole'>
       <div className="header">
         <h1 id="hd">Action Plan</h1>
       </div>

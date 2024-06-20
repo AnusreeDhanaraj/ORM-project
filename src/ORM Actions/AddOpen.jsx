@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import { getDigestValue, getSharePointListItems } from './services/SharePointService';
+// import { getDigestValue, getSharePointListItems } from './services/SharePointService';
 
 const Footer = () => {
   return <div className="footer">Footer Content</div>;
@@ -30,19 +30,7 @@ function AddOpen() {
   });
   const [issues, setIssues] = useState([]);
 
-  useEffect(() => {
-    async function fetchIssues() {
-      try {
-        const digestValue = await getDigestValue();
-        const issues = await getSharePointListItems(digestValue);
-        setIssues(issues);
-      } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-      }
-    }
 
-    fetchIssues();
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -60,26 +48,6 @@ function AddOpen() {
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
 
-  const [formData, setFormData] = useState({
-    userId: '',
-    component: '',
-    sourceOfIssue: '',
-    dateOfIssue: '',
-    vendorName: '',
-    riskRating: '',
-    issueDescription: '',
-    remarks: '',
-    teamLeaderName: '',
-    issueCreator: '',
-    uploadFiles: ''
-  });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
 
   return (
     <><><div className="full">
