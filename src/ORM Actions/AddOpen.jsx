@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.css";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import axios from 'axios';
 // import { getDigestValue, getSharePointListItems } from './services/SharePointService';
 
 const Footer = () => {
@@ -15,7 +16,7 @@ function AddOpen() {
   const [showCreateButton, setShowCreateButton] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [addTable, setAddTable] = useState(false);
-  const [formData, setFormData] = useState({
+  const [ADD_open, setADD_open ] = useState({
     userId: '',
     component: '',
     sourceOfIssue: '',
@@ -34,8 +35,8 @@ function AddOpen() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setADD_open({
+      ...AddOpen,
       [name]: value
     });
   };
@@ -48,6 +49,18 @@ function AddOpen() {
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
 
+
+  
+
+  useEffect(() => {
+      axios.get('http://localhost:3001/ADD_open')
+          .then(response => {
+              setADD_open(response.data);
+          })
+          .catch(error => {
+              console.error('There was an error fetching the users!', error);
+          });
+  }, []);
 
   return (
     <><><div className="full">
@@ -72,7 +85,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="userId"
-                value={formData.userId}
+                value={ADD_open.userId}
                 onChange={handleChange} />
             </label>
 
@@ -82,7 +95,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="component"
-                value={formData.component}
+                value={ADD_open.component}
                 onChange={handleChange} />
             </label>
 
@@ -92,7 +105,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="sourceOfIssue"
-                value={formData.sourceOfIssue}
+                value={ADD_open.sourceOfIssue}
                 onChange={handleChange} />
             </label>
 
@@ -102,7 +115,7 @@ function AddOpen() {
                 type="date"
                 className='form'
                 name="dateOfIssue"
-                value={formData.dateOfIssue}
+                value={ADD_open.dateOfIssue}
                 onChange={handleChange} />
             </label>
 
@@ -112,7 +125,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="vendorName"
-                value={formData.vendorName}
+                value={ADD_open.vendorName}
                 onChange={handleChange} />
             </label>
 
@@ -122,7 +135,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="riskRating"
-                value={formData.riskRating}
+                value={ADD_open.riskRating}
                 onChange={handleChange} />
             </label>
 
@@ -132,7 +145,7 @@ function AddOpen() {
                 name="issueDescription"
                 cols="40"
                 rows="6"
-                value={formData.issueDescription}
+                value={ADD_open.issueDescription}
                 onChange={handleChange}
               ></textarea>
             </label>
@@ -143,7 +156,7 @@ function AddOpen() {
                 name="remarks"
                 cols="40"
                 rows="6"
-                value={formData.remarks}
+                value={ADD_open.remarks}
                 onChange={handleChange}
               ></textarea>
             </label>
@@ -154,7 +167,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="teamLeaderName"
-                value={formData.teamLeaderName}
+                value={ADD_open.teamLeaderName}
                 onChange={handleChange} />
             </label>
 
@@ -164,7 +177,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="issueCreator"
-                value={formData.issueCreator}
+                value={ADD_open.issueCreator}
                 onChange={handleChange} />
             </label>
 
@@ -176,8 +189,8 @@ function AddOpen() {
                 name="uploadFiles"
                 onChange={(e) => {
                   const file = e.target.files[0];
-                  setFormData({
-                    ...formData,
+                  setADD_open({
+                    ...ADD_open,
                     uploadFiles: file
                   });
                 } } />
@@ -192,7 +205,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="userId"
-                value={formData.userId}
+                value={ADD_open.userId}
                 onChange={handleChange} />
             </label>
 
@@ -202,7 +215,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="component"
-                value={formData.component}
+                value={ADD_open.component}
                 onChange={handleChange} />
             </label>
 
@@ -212,7 +225,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="sourceOfIssue"
-                value={formData.sourceOfIssue}
+                value={ADD_open.sourceOfIssue}
                 onChange={handleChange} />
             </label>
 
@@ -222,7 +235,7 @@ function AddOpen() {
                 type="date"
                 className='form'
                 name="dateOfIssue"
-                value={formData.dateOfIssue}
+                value={ADD_open.dateOfIssue}
                 onChange={handleChange} />
             </label>
 
@@ -232,7 +245,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="vendorName"
-                value={formData.vendorName}
+                value={ADD_open.vendorName}
                 onChange={handleChange} />
             </label>
 
@@ -242,7 +255,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="riskRating"
-                value={formData.riskRating}
+                value={ADD_open.riskRating}
                 onChange={handleChange} />
             </label>
 
@@ -252,7 +265,7 @@ function AddOpen() {
                 name="issueDescription"
                 cols="40"
                 rows="6"
-                value={formData.issueDescription}
+                value={ADD_open.issueDescription}
                 onChange={handleChange}
               ></textarea>
             </label>
@@ -263,7 +276,7 @@ function AddOpen() {
                 name="remarks"
                 cols="40"
                 rows="6"
-                value={formData.remarks}
+                value={ADD_open.remarks}
                 onChange={handleChange}
               ></textarea>
             </label>
@@ -274,7 +287,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="teamLeaderName"
-                value={formData.teamLeaderName}
+                value={ADD_open.teamLeaderName}
                 onChange={handleChange} />
             </label>
 
@@ -284,7 +297,7 @@ function AddOpen() {
                 type="text"
                 className='form'
                 name="issueCreator"
-                value={formData.issueCreator}
+                value={ADD_open.issueCreator}
                 onChange={handleChange} />
             </label>
 
@@ -296,8 +309,8 @@ function AddOpen() {
                 name="uploadFiles"
                 onChange={(e) => {
                   const file = e.target.files[0];
-                  setFormData({
-                    ...formData,
+                  setADD_open({
+                    ...ADD_open,
                     uploadFiles: file
                   });
                 } } />
