@@ -8,9 +8,9 @@ app.use(express.json());
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'mydatabase'
+  user: 'postgres',
+  password: '1234',
+  database: 'ORM'
 });
 
 db.connect(err => {
